@@ -1,0 +1,11 @@
+ignore:
+  SNYK-JS-CSSWHAT-1298035:
+    - "* > css-what":
+      reason: No fix available on react-scripts@5.0.1
+      expires: 2024-01-01T00:00:00.000Z
+      created: 2022-05-31T00:00:00.000Z
+  SNYK-JS-NTHCHECK-1586032:
+    - "* > nth-check":
+      reason: No fix available on react-scripts@5.0.1
+      expires: 2024-01-01T00:00:00.000Z
+      created: 2022-05-31T00:00:00.000Z

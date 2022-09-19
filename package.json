@@ -1,0 +1,85 @@
+{
+  "name": "bizcare-pdpa-wallet-ui-ui",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@date-io/dayjs": "^2.14.0",
+    "@emotion/react": "^11.9.0",
+    "@emotion/styled": "^11.8.1",
+    "@mui/icons-material": "^5.6.2",
+    "@mui/material": "^5.7.0",
+    "@mui/x-date-pickers": "^5.0.0-alpha.7",
+    "@react-keycloak/web": "^3.4.0",
+    "@reduxjs/toolkit": "^1.8.1",
+    "@testing-library/jest-dom": "^5.16.4",
+    "@testing-library/react": "^13.0.1",
+    "@testing-library/user-event": "^14.1.1",
+    "@types/jest": "^27.4.1",
+    "@types/node": "^17.0.25",
+    "@types/react": "^18.0.6",
+    "@types/react-dom": "^18.0.2",
+    "@types/react-router-dom": "^5.3.3",
+    "axios": "^0.27.2",
+    "dayjs": "^1.11.3",
+    "env-cmd": "^10.1.0",
+    "i18next": "^21.8.5",
+    "i18next-browser-languagedetector": "^6.1.4",
+    "jwt-decode": "^3.1.2",
+    "keycloak-js": "^18.0.1",
+    "lodash": "^4.17.21",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0",
+    "react-helmet-async": "^1.3.0",
+    "react-hook-form": "^7.33.1",
+    "react-i18next": "^11.16.9",
+    "react-redux": "^8.0.1",
+    "react-router-dom": "^6.3.0",
+    "react-scripts": "5.0.1",
+    "react-use": "^17.4.0",
+    "sass": "^1.51.0",
+    "typescript": "^4.6.0",
+    "web-vitals": "^2.1.0"
+  },
+  "scripts": {
+    "start": "env-cmd -f .env.development.local react-scripts start",
+    "build": "env-cmd -f .env.development react-scripts build",
+    "build:qa": "env-cmd -f .env.qa react-scripts build",
+    "build:stg": "env-cmd -f .env.stg react-scripts build",
+    "build:prod": "env-cmd -f .env.production react-scripts build",
+    "test": "react-scripts test --coverage --watchAll=false --maxWorkers=4",
+    "test:watch": "react-scripts test --coverage --watchAll=true --maxWorkers=4",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "!src/features/walletUser/state/*.{js,jsx,ts,tsx}",
+      "!src/features/walletUser/model/*.{js,jsx,ts,tsx}",
+      "!src/features/walletUser/enums/*.{js,jsx,ts,tsx}",
+      "!src/models/*.{js,jsx,ts,tsx}",
+      "!src/react-app-env.d.ts"
+    ]
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.14.182",
+    "@types/redux-mock-store": "^1.0.3",
+    "redux-mock-store": "^1.5.4"
+  }
+}

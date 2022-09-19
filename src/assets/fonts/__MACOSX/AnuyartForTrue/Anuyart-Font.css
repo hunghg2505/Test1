@@ -1,0 +1,15 @@
+
+@font-face {
+    font-family: "Anuyart Regular";
+    src: local("Anuyart-Regular"),
+    url("./Anuyart-Regular.ttf") format("truetype");
+    font-weight: normal;
+} 
+
+  
+@font-face {
+    font-family: "Anuyart Light";
+    src: local("Anuyart"),
+    url("./Anuyart-Light.ttf") format("truetype");
+    font-weight: lighter;
+} 
